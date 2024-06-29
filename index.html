@@ -120,8 +120,104 @@
     <div class="container content" id="projects">
         <h2>Projects</h2>
         <h3>Graphing Calculator</h3>
-        <p>C# and WPF (.NET)
-        <p>A Graphing calculator which used an object-oriented model and could evaluate mathematical expressions containing content on the A-Level Mathematics specification. Created a user-friendly software interface for customer interactions, showcasing my problem-solving skills and ability to understand customer needs.</p>
+
+        <div class="container">
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown('skills')">Key Skills Used</button>
+                <div class="dropdown-content" id="skills">
+                    <ul>
+                        <li><b>Programming in C#:</b> Chosen for familiarity and support for Object-Oriented Programming (OOP).</li>
+                        <li><b>Windows Presentation Foundation (WPF):</b> Utilized for UI implementation using XAML for better control over UI elements.</li>
+                        <li>
+                            <b>Graphical Rendering Libraries:</b>
+                            <ul>
+                                <li><b>ScottPlot:</b> For generating charts.</li>
+                                <li><b>WPFMaths:</b> For rendering equations using LaTeX-like syntax.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Algorithm Implementation:</b>
+                            <ul>
+                                <li>Shunting Yard algorithm for converting infix notation to postfix notation.</li>
+                                <li>Recursive algorithm for matrix determinant calculation.</li>
+                            </ul>
+                        </li>
+                        <li><b>Object-Oriented Design:</b> Encapsulation of project components in classes (e.g., Matrix, Rational Number).</li>
+                        <li>
+                            <b>Data Structures:</b>
+                            <ul>
+                                <li>Matrix Abstract Data Type (ADT) and associated operations.</li>
+                                <li>Custom classes for complex numbers and vectors.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>User Interface Design:</b>
+                            <ul>
+                                <li>Creation of a robust and easy-to-navigate UI with multiple menus.</li>
+                                <li>Modelling user inputs as objects for better error handling and usability.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown('ideas')">Key Ideas of the Project</button>
+                <div class="dropdown-content" id="ideas">
+                    <ul>
+                        <li><b>Mathematical Visualization:</b> Tools for graphing and visualizing problems in advanced mathematics, aimed at aiding the understanding of A-Level and competition problems (e.g., RitAngle).</li>
+                        <li><b>Component Structure:</b> Divided into three main components: User Interface, Custom Mathematical Library, and Input Handling.</li>
+                        <li><b>Educational Utility:</b> Designed to help solve problems using advanced mathematics and improve comprehension of A-Level content.</li>
+                        <li><b>Mathematical Operations:</b> Support for matrix arithmetic, complex number transformations, and plotting functions.</li>
+                        <li><b>Prototyping and Efficiency:</b> Early prototypes for matrix operations to identify performance bottlenecks and improve efficiency (e.g., determinants of large matrices).</li>
+                        <li><b>Graphical Functionality:</b> Integration of graphical elements similar to tools like Desmos but with support for complex numbers and matrices.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>function toggleDropdown(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }</script>
+
+        <style>
+            .container {
+                width: 80%;
+                margin: auto;
+            }
+
+            .dropdown {
+                margin-bottom: 20px;
+            }
+
+            .dropdown-btn {
+                background-color: #007BFF;
+                color: white;
+                padding: 10px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                text-align: left;
+                outline: none;
+            }
+
+                .dropdown-btn:hover, .dropdown-btn:focus {
+                    background-color: #0056b3;
+                }
+
+            .dropdown-content {
+                display: none;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-top: none;
+            }
+        </style>
         <h3>Image Compression Tool</h3>
         <p>Python 3
         <p>A tool capable of compressing images using Frequency Analysis with the Discrete Cosine Transform. This project honed my problem-solving skills and attention to detail, demonstrating my ability to manage complex tasks and deliver practical solutions.</p>
