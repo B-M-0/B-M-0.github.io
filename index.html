@@ -122,7 +122,7 @@
         <h3>Graphing Calculator</h3>
 
         <div class="container">
-            
+
 
             <div class="dropdown">
                 <button class="dropdown-btn" onclick="toggleDropdown('ideas')">Key Ideas of the Project</button>
@@ -137,17 +137,64 @@
                     </ul>
                 </div>
             </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown('skills')">Key Skills Used</button>
+                <div class="dropdown-content" id="skills">
+                    <ul>
+                        <li><b>Programming in C#:</b> Chosen for familiarity and support for Object-Oriented Programming (OOP).</li>
+                        <li><b>Windows Presentation Foundation (WPF):</b> Utilized for UI implementation using XAML for better control over UI elements.</li>
+                        <li>
+                            <b>Graphical Rendering Libraries:</b>
+                            <ul>
+                                <li><b>ScottPlot:</b> For generating charts.</li>
+                                <li><b>WPFMaths:</b> For rendering equations using LaTeX-like syntax.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Algorithm Implementation:</b>
+                            <ul>
+                                <li>Shunting Yard algorithm for converting infix notation to postfix notation.</li>
+                                <li>Recursive algorithm for matrix determinant calculation.</li>
+                            </ul>
+                        </li>
+                        <li><b>Object-Oriented Design:</b> Encapsulation of project components in classes (e.g., Matrix, Rational Number).</li>
+                        <li>
+                            <b>Data Structures:</b>
+                            <ul>
+                                <li>Matrix Abstract Data Type (ADT) and associated operations.</li>
+                                <li>Custom classes for complex numbers and vectors.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>User Interface Design:</b>
+                            <ul>
+                                <li>Creation of a robust and easy-to-navigate UI with multiple menus.</li>
+                                <li>Modelling user inputs as objects for better error handling and usability.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
 
         </div>
 
-        <script>function toggleDropdown(id) {
-        var content = document.getElementById(id);
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    }</script>
+
+
+
+
+
+
+        <script>
+    function toggleDropdown(id) {
+                var content = document.getElementById(id);
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            }</script>
 
         <style>
             .container {
