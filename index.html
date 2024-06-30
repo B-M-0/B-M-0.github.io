@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdul Mahdi</title>
     <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        canvas {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            display: block;
+            width: 400px;
+            height: 300px;
+            border: 2px solid #ffffff;
+        }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -12,11 +28,13 @@
             padding: 0;
             background-color: #303030;
         }
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
+
         header {
             background: #9056b3;
             color: #fff;
@@ -24,66 +42,80 @@
             min-height: 70px;
             border-bottom: #eb86ff 5px solid;
         }
-        header a, footer a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
+
+            header a, footer a {
+                color: #ffffff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+
+            header ul {
+                padding: 0;
+                list-style: none;
+            }
+
+            header li {
+                display: inline;
+                padding: 0 20px 0 20px;
+            }
+
+            header #branding {
+                float: left;
+            }
+
+                header #branding h1 {
+                    margin: 0;
+                }
+
+            header nav {
+                float: right;
+                margin-top: 10px;
+            }
+
         .showcase {
             min-height: 100px;
             background: url('background.png') no-repeat 0 -100px;
             text-align: center;
             color: #fff;
         }
-        .showcase h1 {
-            margin-top: 100px;
-            font-size: 55px;
-            margin-bottom: 10px;
-        }
-        .showcase p {
-            font-size: 20px;
-        }
+
+            .showcase h1 {
+                margin-top: 100px;
+                font-size: 55px;
+                margin-bottom: 10px;
+            }
+
+            .showcase p {
+                font-size: 20px;
+            }
+
         .content {
             padding: 20px;
             color: #ffffff;
         }
+
         footer {
             background: #333;
             color: #fff;
             text-align: center;
             padding: 30px 0;
         }
+
         .contact-info {
             background: #333;
             color: #fff;
             text-align: center;
             padding: 20px 0;
         }
-        .contact-info p {
-            margin: 5px 0;
-        }
-        .contact-info a {
-            color: #77aaff;
-        }
+
+            .contact-info p {
+                margin: 5px 0;
+            }
+
+            .contact-info a {
+                color: #77aaff;
+            }
     </style>
 </head>
 <body>
@@ -116,169 +148,181 @@
     </div>
 
 
-
-    <div class="container content" id="projects">
-        <h2>Projects</h2>
-        <h3>Graphing Calculator</h3>
-        <p>A Graphing calculator which used an object oriented model and could evaluate mathematical expressions containing content on A-Level Mathematics specification.</p>
-        <div class="container" id="NEA">
-
-
-            <div class="dropdown">
-                <button class="dropdown-btn" onclick="toggleDropdown('ideas_NEA')">Key Ideas of the Project</button>
-                <div class="dropdown-content" id="ideas_NEA">
-                    <ul>
-                        <li><b>Mathematical Visualization:</b> Tools for graphing and visualizing problems in advanced mathematics, aimed at aiding the understanding of A-Level and competition problems (e.g., RitAngle).</li>
-                        <li><b>Component Structure:</b> Divided into three main components: User Interface, Custom Mathematical Library, and Input Handling.</li>
-                        <li><b>Educational Utility:</b> Designed to help solve problems using advanced mathematics and improve comprehension of A-Level content.</li>
-                        <li><b>Mathematical Operations:</b> Support for matrix arithmetic, complex number transformations, and plotting functions.</li>
-                        <li><b>Prototyping and Efficiency:</b> Early prototypes for matrix operations to identify performance bottlenecks and improve efficiency (e.g., determinants of large matrices).</li>
-                        <li><b>Graphical Functionality:</b> Integration of graphical elements similar to tools like Desmos but with support for complex numbers and matrices.</li>
-                    </ul>
-                </div>
-            </div>
-
-
-            <div class="dropdown">
-                <button class="dropdown-btn" onclick="toggleDropdown('skills_NEA')">Key Skills Used</button>
-                <div class="dropdown-content" id="skills_NEA">
-                    <ul>
-                        <li><b>Programming in C#:</b> Chosen for familiarity and support for Object-Oriented Programming (OOP).</li>
-                        <li><b>Windows Presentation Foundation (WPF):</b> Utilized for UI implementation using XAML for better control over UI elements.</li>
-                        <li>
-                            <b>Graphical Rendering Libraries:</b>
-                            <ul>
-                                <li><b>ScottPlot:</b> For generating charts.</li>
-                                <li><b>WPFMaths:</b> For rendering equations using LaTeX-like syntax.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <b>Algorithm Implementation:</b>
-                            <ul>
-                                <li>Shunting Yard algorithm for converting infix notation to postfix notation.</li>
-                                <li>Recursive algorithm for matrix determinant calculation.</li>
-                            </ul>
-                        </li>
-                        <li><b>Object-Oriented Design:</b> Encapsulation of project components in classes (e.g., Matrix, Rational Number).</li>
-                        <li>
-                            <b>Data Structures:</b>
-                            <ul>
-                                <li>Matrix Abstract Data Type (ADT) and associated operations.</li>
-                                <li>Custom classes for complex numbers and vectors.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <b>User Interface Design:</b>
-                            <ul>
-                                <li>Creation of a robust and easy-to-navigate UI with multiple menus.</li>
-                                <li>Modelling user inputs as objects for better error handling and usability.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <canvas id="screensaver"></canvas>
+    <script src="screensaver.js"></script>
+   
+    
+    <canvas id="snake" width="400" height="400"></canvas>
+    <script src="snek.js"></script>
 
 
 
-        </div>
 
-        <h3>Image Compression Tool</h3>
-        <p>A tool capable of compressing images using Frequency Analysis with the Discrete Cosine Transform. 
-        <div class="container" id="EPQ">
-            
-            
-            <div class = "dropdown">
-                <button class ="dropdown-btn" onclick="toggleDropdown('skills_EPQ')">Key Skills Used</button>
-                <div class ="dropdown-content" id="skills_EPQ">
-                    <ul>
-                        <li>
-                        <strong>Research Skills:</strong>
-                            <ul>
-                                <li>Extensive research on Fourier Transforms and Discrete Cosine Transforms.</li>
-                                <li>Use of academic books, blogs, lecture notes, and articles.</li>
-                                <li>Adaptation to high-level sources by seeking engineering-focused material.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Technical Skills:</strong>
-                            <ul>
-                                <li>Implementation of image compression using frequency analysis.</li>
-                                <li>Programming in Python with a focus on image processing.</li>
-                                <li>Utilization of PyCharm for development.</li>
-                                <li>Use of libraries such as <code>scipy</code>, <code>numpy</code>, and <code>PIL</code>.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Problem-Solving Skills:</strong>
-                            <ul>
-                                <li>Overcoming technical challenges, such as switching from Fourier Transform to Discrete Cosine Transform.</li>
-                                <li>Addressing issues with binary file storage and large numbers through the use of hyperbolic sine functions.</li>
-                                <li>Iterative testing and refinement of the compression algorithm.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Planning and Project Management:</strong>
-                            <ul>
-                                <li>Use of Gantt charts and timelines for project planning.</li>
-                                <li>Adapting the project plan according to progress and feedback.</li>
-                                <li>Mock-ups and use of LucidCharts for visualization and planning.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Communication Skills:</strong>
-                            <ul>
-                                <li>Documenting the project progress and changes.</li>
-                                <li>Seeking and incorporating feedback from mentors and teachers.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-      
+     <div class="container content" id="projects" src="projects.html">
+         <h2>Projects</h2>
+         <h3>Graphing Calculator</h3>
+         <p>A Graphing calculator which used an object oriented model and could evaluate mathematical expressions containing content on A-Level Mathematics specification.</p>
+         <div class="container" id="NEA">
 
-            <div class = "dropdown">
-                <button class="dropdown-btn" onclick="toggleDropdown('ideas_EPQ')">Key Ideas of the Project</button>
-                <div class="dropdown-content" id="ideas_EPQ">
-                    <ul>
-                        <li><strong>Project Focus:</strong> Implementation of an image compression algorithm using frequency analysis.</li>
-                        <li>
-                            <strong>Algorithm Explanation:</strong>
-                            <ul>
-                                <li>Conversion of images to black and white and then to the frequency domain using the Discrete Cosine Transform.</li>
-                                <li>Use of a threshold value to create a mask matrix, followed by applying this mask to the frequency domain matrix.</li>
-                                <li>Addressing the issue of large numbers in binary encoding using hyperbolic sine functions.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Planning and Management:</strong>
-                            <ul>
-                                <li>Initial use of Gantt charts, later switched to timelines for better task management.</li>
-                                <li>Dealing with disruptions and adjusting plans during the summer break.</li>
-                                <li>Constructing a strict autumn timeline to stay on track with project milestones.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Research and Development:</strong>
-                            <ul>
-                                <li>Detailed research on Fourier and Discrete Cosine Transforms.</li>
-                                <li>Learning from diverse sources including lectures from Stanford and MIT.</li>
-                                <li>Incorporation of practical insights from books on data-driven science and engineering.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Implementation and Troubleshooting:</strong>
-                            <ul>
-                                <li>Developing a basic UI in PyCharm to support the main algorithm.</li>
-                                <li>Transition from theoretical understanding to practical implementation.</li>
-                                <li>Addressing and solving technical issues through iterative development and testing.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
-        </div>
-    </div>
+             <div class="dropdown">
+                 <button class="dropdown-btn" onclick="toggleDropdown('ideas_NEA')">Key Ideas of the Project</button>
+                 <div class="dropdown-content" id="ideas_NEA">
+                     <ul>
+                         <li><b>Mathematical Visualization:</b> Tools for graphing and visualizing problems in advanced mathematics, aimed at aiding the understanding of A-Level and competition problems (e.g., RitAngle).</li>
+                         <li><b>Component Structure:</b> Divided into three main components: User Interface, Custom Mathematical Library, and Input Handling.</li>
+                         <li><b>Educational Utility:</b> Designed to help solve problems using advanced mathematics and improve comprehension of A-Level content.</li>
+                         <li><b>Mathematical Operations:</b> Support for matrix arithmetic, complex number transformations, and plotting functions.</li>
+                         <li><b>Prototyping and Efficiency:</b> Early prototypes for matrix operations to identify performance bottlenecks and improve efficiency (e.g., determinants of large matrices).</li>
+                         <li><b>Graphical Functionality:</b> Integration of graphical elements similar to tools like Desmos but with support for complex numbers and matrices.</li>
+                     </ul>
+                 </div>
+             </div>
+
+
+             <div class="dropdown">
+                 <button class="dropdown-btn" onclick="toggleDropdown('skills_NEA')">Key Skills Used</button>
+                 <div class="dropdown-content" id="skills_NEA">
+                     <ul>
+                         <li><b>Programming in C#:</b> Chosen for familiarity and support for Object-Oriented Programming (OOP).</li>
+                         <li><b>Windows Presentation Foundation (WPF):</b> Utilized for UI implementation using XAML for better control over UI elements.</li>
+                         <li>
+                             <b>Graphical Rendering Libraries:</b>
+                             <ul>
+                                 <li><b>ScottPlot:</b> For generating charts.</li>
+                                 <li><b>WPFMaths:</b> For rendering equations using LaTeX-like syntax.</li>
+                             </ul>
+                         </li>
+                         <li>
+                             <b>Algorithm Implementation:</b>
+                             <ul>
+                                 <li>Shunting Yard algorithm for converting infix notation to postfix notation.</li>
+                                 <li>Recursive algorithm for matrix determinant calculation.</li>
+                             </ul>
+                         </li>
+                         <li><b>Object-Oriented Design:</b> Encapsulation of project components in classes (e.g., Matrix, Rational Number).</li>
+                         <li>
+                             <b>Data Structures:</b>
+                             <ul>
+                                 <li>Matrix Abstract Data Type (ADT) and associated operations.</li>
+                                 <li>Custom classes for complex numbers and vectors.</li>
+                             </ul>
+                         </li>
+                         <li>
+                             <b>User Interface Design:</b>
+                             <ul>
+                                 <li>Creation of a robust and easy-to-navigate UI with multiple menus.</li>
+                                 <li>Modelling user inputs as objects for better error handling and usability.</li>
+                             </ul>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+
+
+
+         </div>
+
+         <h3>Image Compression Tool</h3>
+         <p>
+             A tool capable of compressing images using Frequency Analysis with the Discrete Cosine Transform.
+             <div class="container" id="EPQ">
+
+
+                 <div class="dropdown">
+                     <button class="dropdown-btn" onclick="toggleDropdown('ideas_EPQ')">Key Ideas of the Project</button>
+                     <div class="dropdown-content" id="ideas_EPQ">
+                         <ul>
+                             <li><strong>Project Focus:</strong> Implementation of an image compression algorithm using frequency analysis.</li>
+                             <li>
+                                 <strong>Algorithm Explanation:</strong>
+                                 <ul>
+                                     <li>Conversion of images to black and white and then to the frequency domain using the Discrete Cosine Transform.</li>
+                                     <li>Use of a threshold value to create a mask matrix, followed by applying this mask to the frequency domain matrix.</li>
+                                     <li>Addressing the issue of large numbers in binary encoding using hyperbolic sine functions.</li>
+                                 </ul>
+                             </li>
+                             <li>
+                                 <strong>Planning and Management:</strong>
+                                 <ul>
+                                     <li>Initial use of Gantt charts, later switched to timelines for better task management.</li>
+                                     <li>Dealing with disruptions and adjusting plans during the summer break.</li>
+                                     <li>Constructing a strict autumn timeline to stay on track with project milestones.</li>
+                                 </ul>
+                             </li>
+                             <li>
+                                 <strong>Research and Development:</strong>
+                                 <ul>
+                                     <li>Detailed research on Fourier and Discrete Cosine Transforms.</li>
+                                     <li>Learning from diverse sources including lectures from Stanford and MIT.</li>
+                                     <li>Incorporation of practical insights from books on data-driven science and engineering.</li>
+                                 </ul>
+                             </li>
+                             <li>
+                                 <strong>Implementation and Troubleshooting:</strong>
+                                 <ul>
+                                     <li>Developing a basic UI in PyCharm to support the main algorithm.</li>
+                                     <li>Transition from theoretical understanding to practical implementation.</li>
+                                     <li>Addressing and solving technical issues through iterative development and testing.</li>
+                                 </ul>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+
+                 <div class="dropdown">
+                     <button class="dropdown-btn" onclick="toggleDropdown('skills_EPQ')">Key Skills Used</button>
+                     <div class="dropdown-content" id="skills_EPQ">
+                         <ul>
+                             <li>
+                                 <strong>Research Skills:</strong>
+                                 <ul>
+                                     <li>Extensive research on Fourier Transforms and Discrete Cosine Transforms.</li>
+                                     <li>Use of academic books, blogs, lecture notes, and articles.</li>
+                                     <li>Adaptation to high-level sources by seeking engineering-focused material.</li>
+                                 </ul>
+                             </li>
+                             <li>
+                                 <strong>Technical Skills:</strong>
+                                 <ul>
+                                     <li>Implementation of image compression using frequency analysis.</li>
+                                     <li>Programming in Python with a focus on image processing.</li>
+                                     <li>Utilization of PyCharm for development.</li>
+                                     <li>Use of libraries such as <code>scipy</code>, <code>numpy</code>, and <code>PIL</code>.</li>
+                                 </ul>
+                             </li>
+                             <li>
+                                 <strong>Problem-Solving Skills:</strong>
+                                 <ul>
+                                     <li>Overcoming technical challenges, such as switching from Fourier Transform to Discrete Cosine Transform.</li>
+                                     <li>Addressing issues with binary file storage and large numbers through the use of hyperbolic sine functions.</li>
+                                     <li>Iterative testing and refinement of the compression algorithm.</li>
+                                 </ul>
+                             </li>
+                             <li>
+                                 <strong>Planning and Project Management:</strong>
+                                 <ul>
+                                     <li>Use of Gantt charts and timelines for project planning.</li>
+                                     <li>Adapting the project plan according to progress and feedback.</li>
+                                     <li>Mock-ups and use of LucidCharts for visualization and planning.</li>
+                                 </ul>
+                             </li>
+                             <li>
+                                 <strong>Communication Skills:</strong>
+                                 <ul>
+                                     <li>Documenting the project progress and changes.</li>
+                                     <li>Seeking and incorporating feedback from mentors and teachers.</li>
+                                 </ul>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+
+
+
+
+             </div>
+     </div>
 
     <script>
         function toggleDropdown(id) {
