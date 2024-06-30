@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     canvas.height = window.innerHeight;
     
     const logo = new Image();
-    logo.src = 'logo.png'; // Replace with the path to your DVD logo image
+    logo.src = 'logo.png'; 
     
     let x = Math.random() * (canvas.width - 100);
     let y = Math.random() * (canvas.height - 50);
