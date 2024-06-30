@@ -102,31 +102,31 @@
             </nav>
         </div>
     </header>
-    
+
     <section class="showcase">
         <div class="container">
-            <h1>Welcome to My Personal Webpage</h1>
-            
+            <h1>WIP</h1>
+
         </div>
     </section>
 
     <div class="container content" id="about">
         <h2>About Me</h2>
-        <p>My name is Abdul Mahdi, I am currently pursuing A-Levels at Barton Peveril Sixth Form College with predicted grades of A* in Maths and Further Maths, Computer Science, and an A in the Extended Project Qualification.</p>
+        <p>Nothing to see here</p>
     </div>
 
-    
+
 
     <div class="container content" id="projects">
         <h2>Projects</h2>
         <h3>Graphing Calculator</h3>
         <p>A Graphing calculator which used an object oriented model and could evaluate mathematical expressions containing content on A-Level Mathematics specification.</p>
-        <div class="container">
+        <div class="container" id="NEA">
 
 
             <div class="dropdown">
-                <button class="dropdown-btn" onclick="toggleDropdown('ideas')">Key Ideas of the Project</button>
-                <div class="dropdown-content" id="ideas">
+                <button class="dropdown-btn" onclick="toggleDropdown('ideas_NEA')">Key Ideas of the Project</button>
+                <div class="dropdown-content" id="ideas_NEA">
                     <ul>
                         <li><b>Mathematical Visualization:</b> Tools for graphing and visualizing problems in advanced mathematics, aimed at aiding the understanding of A-Level and competition problems (e.g., RitAngle).</li>
                         <li><b>Component Structure:</b> Divided into three main components: User Interface, Custom Mathematical Library, and Input Handling.</li>
@@ -137,9 +137,11 @@
                     </ul>
                 </div>
             </div>
+
+
             <div class="dropdown">
-                <button class="dropdown-btn" onclick="toggleDropdown('skills')">Key Skills Used</button>
-                <div class="dropdown-content" id="skills">
+                <button class="dropdown-btn" onclick="toggleDropdown('skills_NEA')">Key Skills Used</button>
+                <div class="dropdown-content" id="skills_NEA">
                     <ul>
                         <li><b>Programming in C#:</b> Chosen for familiarity and support for Object-Oriented Programming (OOP).</li>
                         <li><b>Windows Presentation Foundation (WPF):</b> Utilized for UI implementation using XAML for better control over UI elements.</li>
@@ -180,156 +182,153 @@
 
         </div>
 
-        <script>
-            function toggleDropdown(id) {
-                var content = document.getElementById(id);
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            }</script>
-
-        <style>
-            .container {
-                width: 80%;
-                margin: auto;
-            }
-
-            .dropdown {
-                margin-bottom: 20px;
-            }
-
-            .dropdown-btn {
-                background-color: #9056b3;
-                color: white;
-                padding: 7px;
-                font-size: 16px;
-                border: none;
-                cursor: pointer;
-                width: 100%;
-                text-align: left;
-                outline: none;
-            }
-
-                .dropdown-btn:hover {
-                    background-color: #942dd1;
-                }
-
-            .dropdown-content {
-                display: none;
-                padding: 10px;
-                border: 1px solid #ddd;
-                border-top: none;
-            }
-        </style>
         <h3>Image Compression Tool</h3>
-        <p>A tool capable of compressing images using Frequency Analysis with the Discrete Cosine Transform. This project honed my problem-solving skills and attention to detail, demonstrating my ability to manage complex tasks and deliver practical solutions.</p>
-        <div>
-            <button onclick="toggleSection('skills')">Key Skills</button>
-            <div id="skills" style="display:none;">
-                <ul>
-                    <li>
+        <p>A tool capable of compressing images using Frequency Analysis with the Discrete Cosine Transform. 
+        <div class="container" id="EPQ">
+            
+            
+            <div class = "dropdown">
+                <button class ="dropdown-btn" onclick="toggleDropdown('skills_EPQ')">Key Skills Used</button>
+                <div class ="dropdown-content" id="skills_EPQ">
+                    <ul>
+                        <li>
                         <strong>Research Skills:</strong>
-                        <ul>
-                            <li>Extensive research on Fourier Transforms and Discrete Cosine Transforms.</li>
-                            <li>Use of academic books, blogs, lecture notes, and articles.</li>
-                            <li>Adaptation to high-level sources by seeking engineering-focused material.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Technical Skills:</strong>
-                        <ul>
-                            <li>Implementation of image compression using frequency analysis.</li>
-                            <li>Programming in Python with a focus on image processing.</li>
-                            <li>Utilization of PyCharm for development.</li>
-                            <li>Use of libraries such as <code>scipy</code>, <code>numpy</code>, and <code>PIL</code>.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Problem-Solving Skills:</strong>
-                        <ul>
-                            <li>Overcoming technical challenges, such as switching from Fourier Transform to Discrete Cosine Transform.</li>
-                            <li>Addressing issues with binary file storage and large numbers through the use of hyperbolic sine functions.</li>
-                            <li>Iterative testing and refinement of the compression algorithm.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Planning and Project Management:</strong>
-                        <ul>
-                            <li>Use of Gantt charts and timelines for project planning.</li>
-                            <li>Adapting the project plan according to progress and feedback.</li>
-                            <li>Mock-ups and use of LucidCharts for visualization and planning.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Communication Skills:</strong>
-                        <ul>
-                            <li>Documenting the project progress and changes.</li>
-                            <li>Seeking and incorporating feedback from mentors and teachers.</li>
-                        </ul>
-                    </li>
-                </ul>
+                            <ul>
+                                <li>Extensive research on Fourier Transforms and Discrete Cosine Transforms.</li>
+                                <li>Use of academic books, blogs, lecture notes, and articles.</li>
+                                <li>Adaptation to high-level sources by seeking engineering-focused material.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Technical Skills:</strong>
+                            <ul>
+                                <li>Implementation of image compression using frequency analysis.</li>
+                                <li>Programming in Python with a focus on image processing.</li>
+                                <li>Utilization of PyCharm for development.</li>
+                                <li>Use of libraries such as <code>scipy</code>, <code>numpy</code>, and <code>PIL</code>.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Problem-Solving Skills:</strong>
+                            <ul>
+                                <li>Overcoming technical challenges, such as switching from Fourier Transform to Discrete Cosine Transform.</li>
+                                <li>Addressing issues with binary file storage and large numbers through the use of hyperbolic sine functions.</li>
+                                <li>Iterative testing and refinement of the compression algorithm.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Planning and Project Management:</strong>
+                            <ul>
+                                <li>Use of Gantt charts and timelines for project planning.</li>
+                                <li>Adapting the project plan according to progress and feedback.</li>
+                                <li>Mock-ups and use of LucidCharts for visualization and planning.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Communication Skills:</strong>
+                            <ul>
+                                <li>Documenting the project progress and changes.</li>
+                                <li>Seeking and incorporating feedback from mentors and teachers.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+      
 
-        <div>
-            <button onclick="toggleSection('ideas')">Key Ideas</button>
-            <div id="ideas" style="display:none;">
-                <ul>
-                    <li><strong>Project Focus:</strong> Implementation of an image compression algorithm using frequency analysis.</li>
-                    <li>
-                        <strong>Algorithm Explanation:</strong>
-                        <ul>
-                            <li>Conversion of images to black and white and then to the frequency domain using the Discrete Cosine Transform.</li>
-                            <li>Use of a threshold value to create a mask matrix, followed by applying this mask to the frequency domain matrix.</li>
-                            <li>Addressing the issue of large numbers in binary encoding using hyperbolic sine functions.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Planning and Management:</strong>
-                        <ul>
-                            <li>Initial use of Gantt charts, later switched to timelines for better task management.</li>
-                            <li>Dealing with disruptions and adjusting plans during the summer break.</li>
-                            <li>Constructing a strict autumn timeline to stay on track with project milestones.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Research and Development:</strong>
-                        <ul>
-                            <li>Detailed research on Fourier and Discrete Cosine Transforms.</li>
-                            <li>Learning from diverse sources including lectures from Stanford and MIT.</li>
-                            <li>Incorporation of practical insights from books on data-driven science and engineering.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Implementation and Troubleshooting:</strong>
-                        <ul>
-                            <li>Developing a basic UI in PyCharm to support the main algorithm.</li>
-                            <li>Transition from theoretical understanding to practical implementation.</li>
-                            <li>Addressing and solving technical issues through iterative development and testing.</li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class = "dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown('ideas_EPQ')">Key Ideas of the Project</button>
+                <div class="dropdown-content" id="ideas_EPQ">
+                    <ul>
+                        <li><strong>Project Focus:</strong> Implementation of an image compression algorithm using frequency analysis.</li>
+                        <li>
+                            <strong>Algorithm Explanation:</strong>
+                            <ul>
+                                <li>Conversion of images to black and white and then to the frequency domain using the Discrete Cosine Transform.</li>
+                                <li>Use of a threshold value to create a mask matrix, followed by applying this mask to the frequency domain matrix.</li>
+                                <li>Addressing the issue of large numbers in binary encoding using hyperbolic sine functions.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Planning and Management:</strong>
+                            <ul>
+                                <li>Initial use of Gantt charts, later switched to timelines for better task management.</li>
+                                <li>Dealing with disruptions and adjusting plans during the summer break.</li>
+                                <li>Constructing a strict autumn timeline to stay on track with project milestones.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Research and Development:</strong>
+                            <ul>
+                                <li>Detailed research on Fourier and Discrete Cosine Transforms.</li>
+                                <li>Learning from diverse sources including lectures from Stanford and MIT.</li>
+                                <li>Incorporation of practical insights from books on data-driven science and engineering.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Implementation and Troubleshooting:</strong>
+                            <ul>
+                                <li>Developing a basic UI in PyCharm to support the main algorithm.</li>
+                                <li>Transition from theoretical understanding to practical implementation.</li>
+                                <li>Addressing and solving technical issues through iterative development and testing.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
         </div>
-
-        <script>
-            function toggleSection(id) {
-                var section = document.getElementById(id);
-                if (section.style.display === "none") {
-                    section.style.display = "block";
-                } else {
-                    section.style.display = "none";
-                }
-            }
-        </script>
-
     </div>
+
+    <script>
+        function toggleDropdown(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }</script>
+
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .dropdown {
+            margin-bottom: 20px;
+        }
+
+        .dropdown-btn {
+            background-color: #9056b3;
+            color: white;
+            padding: 7px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            outline: none;
+        }
+
+            .dropdown-btn:hover {
+                background-color: #942dd1;
+            }
+
+        .dropdown-content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+    </style>
+
+
 
     <div class="contact-info" id="contact">
         <h2>Contact Me</h2>
-   
+
         <p><strong>Phone:</strong> +44 7761 050 156</p>
         <p><strong>Email:</strong> <a href="mailto:abdulmahdi1856@gmail.com">abdulmahdi1856@gmail.com</a></p>
         <p><strong>LinkedIn:</strong> <a href="http://linkedin.com/in/abdul-mahdi-2a77182a8">Abdul Mahdi</a></p>
