@@ -2,7 +2,7 @@ const canvas = document.getElementById('snake');
 const ctx = canvas.getContext('2d');
 
 const box = 20;
-const canvasSize = 400;
+const canvasSize = window.innerHeight;
 let snake = [{ x: box * 5, y: box * 5 }];
 let direction = 'RIGHT';
 let food = {
